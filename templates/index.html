@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Search</h1>
+        <!-- 查询输入容器 -->
+        <div class="query-container">
+            <input type="text" id="search-query" placeholder="Query">
+        </div>
+        <!-- 域名输入容器 -->
+        <div class="domain-container" id="domain-container">
+            <!-- 初始域名输入框 -->
+            <input type="text" name="search-domain" placeholder="Domain">
+        </div>
+        <!-- 按钮容器 -->
+        <div class="button-container">
+            <button id="add-query">➕</button> <!-- 加号按钮放在域名输入容器中 -->
+            <button onclick="performSearch()">🔍</button> <!-- 搜索按钮 -->
+        </div>
+        <div id="results" class="results-container">
+            <!-- 结果卡片将被动态插入这里 -->
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
