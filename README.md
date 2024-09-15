@@ -48,3 +48,5 @@
 python app.py
 ```
 即可在本地运行Web UI
+
+具体内容可参考[项目报告](report.pdf)
